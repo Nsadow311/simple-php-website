@@ -1,5 +1,5 @@
 <?php
-$password = "changeme";
+$password = "oreogod";
 // Set a password for the Admin Panel
 // You can access the Panel on: www.yourdomain.com/admin.php
 
