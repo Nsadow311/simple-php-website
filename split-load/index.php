@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>split-Load</title>
 <script src="assets/js/jquery-3.2.1.min.js"></script>
- <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+ <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 <link href='assets/css/fonts.css' rel='stylesheet' type='text/css'>
  <link href="assets/css/main.css" rel="stylesheet" type='text/css'>
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -480,9 +480,9 @@ window.onload = function(){
 <?php 
 $mainColor = "36ab98";
   // Getting the main color in the avatar
-  $image=imagecreatefromjpeg($joining_avatar);
-  $thumb=imagecreatetruecolor(1,1); imagecopyresampled($thumb,$image,0,0,0,0,1,1,imagesx($image),imagesy($image));
-    $mainColor=strtoupper(dechex(imagecolorat($thumb,0,0)));
+  //$image=imagecreatefromjpeg($joining_avatar);
+  //$thumb=imagecreatetruecolor(1,1); imagecopyresampled($thumb,$image,0,0,0,0,1,1,imagesx($image),imagesy($image));
+  //$mainColor=strtoupper(dechex(imagecolorat($thumb,0,0)));
 ?>
 <div id="player-info" <?php if($theme == 2){ echo 'style="background: #1e1e1e; color: #c1c1c1;"'; } ?>><div id="strip" style="top: 5px; background-color: #<?php echo $mainColor; ?>;"></div><img style="position: absolute; display: inline-block; top: 0;" class="avatar" id="img-avatar" src="<?php echo $joining_avatar;?>" />
 <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 300;" id="username">Welcome, <?php echo $joining_name; ?>!</p>
@@ -568,4 +568,4 @@ var background4 = <?php echo json_encode($background[4]); ?>;
 <script src="assets/js/background-cycle.js"></script>
 
 </body>
-</html> 
+</html>
